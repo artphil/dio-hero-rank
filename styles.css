@@ -1,0 +1,148 @@
+:root {
+  --artphil: #00c389;
+  --iron: linear-gradient(45deg, #656565, #696969, #515151, #696969);
+  --bronze: linear-gradient(45deg, #4a4a4a, #8b4513, #634213, #8b4513);
+  --silver: linear-gradient(45deg, #a4a4a4, #a9a9a9, #818684, #a9a9a9);
+  --gold: linear-gradient(45deg, #535353, #b8860b, #775d0d, #b8860b);
+  --diamante: linear-gradient(
+    45deg,
+    #dcdcdc 0%,
+    #71d8ef 20%,
+    #afeeee 25%,
+    #71d8ef 70%,
+    #dcdcdc 80%,
+    #71d8ef 100%
+  );
+  --lendario: linear-gradient(0deg, #e7d5d4, #d0a317, #d2691e);
+  --imortal: radial-gradient(
+    circle,
+    #ffffff,
+    #ffd700,
+    #ffc0cb,
+    #ff4500,
+    #9400d3
+  );
+  --font: "Exo 2", sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font);
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 4rem;
+}
+
+strong {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 5px 5px 8px 5px gray;
+  border-radius: 2rem;
+  background-color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+label {
+  padding-left: 1rem;
+}
+
+input {
+  font-family: var(--font);
+  width: 15rem;
+  height: 2rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  -moz-appearance: textfield;
+}
+
+input::placeholder {
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  font-family: var(--font);
+  color: white;
+  background-color: #775d0d;
+  width: 15rem;
+  height: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-family: var(--font);
+  font-size: 1.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--artphil);
+}
+
+.ferro {
+  background: var(--iron);
+}
+.bronze {
+  background: var(--bronze);
+}
+.prata {
+  background: var(--silver);
+}
+.ouro {
+  background: var(--gold);
+}
+.diamante {
+  background: var(--diamante);
+}
+.lendario {
+  background: var(--lendario);
+}
+.imortal {
+  background: var(--imortal);
+}

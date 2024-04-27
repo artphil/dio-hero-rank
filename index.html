@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hero Rank</title>
+  </head>
+  <body>
+    <main id="bg">
+      <h2 id="message"></h2>
+      <div class="card">
+        <h1>Hero Rank</h1>
+        <p>Descubra a sua classificação de heroi</p>
+        <form id="heroForm">
+          <div>
+            <label for="victories"> Vitórias </label>
+            <input
+              type="number"
+              name="victories"
+              id="victories"
+              min="0"
+              placeholder="Digite aqui o número de vitóras"
+              required
+            />
+          </div>
+          <div>
+            <label for="defeats"> Derrotas </label>
+            <input
+              type="number"
+              name="defeats"
+              id="defeats"
+              min="0"
+              placeholder="Digite aqui \o número de derrotas"
+              required
+            />
+          </div>
+          <button type="submit">Calcular</button>
+        </form>
+      </div>
+      <script src="scripts.js"></script>
+    </main>
+    <footer>
+      <p>
+        design by
+        <a href="https://artphil.github.io/" target="_blank"> artphil </a>
+      </p>
+    </footer>
+  </body>
+</html>
